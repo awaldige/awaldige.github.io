@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | André Waldige</title>
+    <meta
+      name="description"
+      content="Portfólio de André Waldige, desenvolvedor front-end em transição de carreira."
+    />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portfólio | André Waldige" />
+    <meta property="og:description" content="Desenvolvedor Front-end em transição de carreira." />
+    <meta property="og:image" content="avatar.jpeg" />
+    <meta property="og:url" content="https://seu-site.vercel.app" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Visually hidden class para labels acessíveis */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <nav class="container">
+        <h1>André Waldige</h1>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+         <button id="toggleDarkMode" aria-label="Alternar modo escuro">
+      <span class="icon sun">☀️</span>
+      <span class="icon moon">🌙</span>
+         </button>
+      </nav>
+    </header>
+
+    <!-- Início -->
+    <section id="home" class="section">
+      <div class="container" data-aos="fade-up">
+        <img src="avatar.jpeg" alt="Foto de perfil de André Waldige" class="avatar" />
+        <h2>Olá, sou o André Waldige</h2>
+        <p>
+          Desenvolvedor Front-end em transição de carreira, apaixonado por tecnologia, interfaces modernas e soluções que proporcionam uma excelente experiência ao usuário.
+        </p>        
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section">
+      <div class="container" data-aos="fade-right">
+        <h2>Sobre Mim</h2>
+        <p>
+         Desenvolvedor em formação com experiência em HTML, CSS, JavaScript, Git, APIs e SQL.  
+         Atualmente focado em aprender e aplicar React em projetos práticos.
+        </p>         
+        <p>
+          Busco aplicar meus conhecimentos técnicos em soluções inovadoras, enquanto continuo
+          evoluindo na área.
+        </p>       
+        <p>
+          Estou sempre em busca de novos desafios e oportunidades para
+          aprimorar minhas habilidades e contribuir para projetos impactantes.
+        </p>
+        <p>
+          Se você está procurando um desenvolvedor dedicado e apaixonado por
+          tecnologia, entre em contato!
+        </p>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section">
+      <div class="container" data-aos="fade-left">
+        <h2>Habilidades</h2>
+        <div class="grid-habilidades">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Git & GitHub</span>
+          <span>APIs REST</span>
+          <span>SQL</span>
+          <span>Python</span>
+          <span>React (em aprendizado)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <section id="formacao" class="section">
+      <div class="container" data-aos="fade-up">
+        <h2>Formação Acadêmica</h2>
+        <ul class="timeline">
+          <li>
+            <strong>Análise e Desenvolvimento de Sistemas</strong>
+            <span>Faculdade Anhanguera - Concluído (2023)</span>
+          </li>
+          <li>
+            <strong>Pós-graduação em Inteligência Artificial e Machine Learning</strong>
+            <span>Faculdade Anhanguera - Concluído (2024)</span>
+          </li>
+          <li>
+            <strong>Pós-graduação em Transformação Digital e Inovação</strong>
+            <span>Faculdade Anhanguera - Concluído</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section">
+      <div class="container" data-aos="fade-up">
+        <h2>Projetos em Destaque</h2>
+
+        <div class="card-projetos">
+          <div class="projeto">
+            <h3>Cardápio de Pizzaria</h3>
+            <p>Menu interativo com categorias e tema escuro/claro.</p>
+            <p><strong>Tecnologias:</strong> HTML, CSS, JS</p>
+            <a href="https://github.com/awaldige/cardapio-pizzaria" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+
+          <div class="projeto">
+            <h3>Pesquisa de Livros</h3>
+            <p>Busca livros com Google Books API.</p>
+            <p><strong>Tecnologias:</strong> HTML, JS, API</p>
+            <a href="https://github.com/awaldige/Pesquisa-de-Livros" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+
+          <div class="projeto">
+            <h3>Pesquisa de Filmes e Séries</h3>
+            <p>Busca com TMDb API.</p>
+            <p><strong>Tecnologias:</strong> HTML, JS, CSS</p>
+            <a href="https://github.com/awaldige/Pesquisa-de-filmes-e-serie" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+
+          <div class="projeto">
+            <h3>Portal de Esportes</h3>
+            <p>Portal informativo com notícias e destaques de várias modalidades esportivas.</p>
+            <p><strong>Tecnologias:</strong> HTML, JS, CSS</p>
+            <a href="https://github.com/awaldige/Portal-de-Esportes" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+
+          <div class="projeto">
+            <h3>Loterias Caixas</h3>
+            <p>Consulta de resultados das loterias.</p>
+            <p><strong>Tecnologias:</strong> Python</p>
+            <a href="https://github.com/awaldige/Loterias-Caixas" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+
+          <div class="projeto">
+            <h3>Vendas de Carros</h3>
+            <p>Sistema de banco de dados para controle de vendas de automóveis</p>
+            <p><strong>Tecnologias:</strong> SQL</p>
+            <a href="https://github.com/awaldige/bd-Vendas-Carro" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+
+          <div class="projeto">
+            <h3>Livraria</h3>
+            <p>Sistema de banco de dados para controle de uma biblioteca</p>
+            <p><strong>Tecnologias:</strong> SQL</p>
+            <a href="https://github.com/awaldige/Livraria" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+      <div class="container" data-aos="fade-up">
+        <h2>Contato</h2>
+        <form action="https://formsubmit.co/awaldige@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="seu nome" required />
+  <input type="email" name="email" placeholder="seu e-mail" required />
+  <textarea name="message" placeholder="Sua mensagem" required></textarea>
+
+  <!-- Configurações do FormSubmit -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="obrigado.html">
+
+  <button type="submit">Enviar</button>
+</form>
+        <div class="links">
+          <a href="https://github.com/awaldige" target="_blank" rel="noopener noreferrer">GitHub</a> |
+          <a href="https://www.linkedin.com/in/andr%C3%A9-waldige-41489986/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; 2025 André Waldige. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
