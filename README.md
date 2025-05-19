@@ -7,8 +7,7 @@
 Este é o meu portfólio pessoal como desenvolvedor front-end em transição de carreira. O objetivo é apresentar minhas habilidades, formação, projetos desenvolvidos e facilitar o contato com recrutadores ou pessoas interessadas no meu trabalho.
 
 ## 🔗 Acesse o portfólio online
-
- https://awaldige.github.io/Portfolio/
+(https://awaldige.github.io/index.html)
 
 ## ✨ Funcionalidades
 
