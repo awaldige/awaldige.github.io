@@ -362,7 +362,31 @@ body.dark-mode #toggleDarkMode .icon.moon {
   header nav h1 {
     font-size: 1.4rem;
   }
+}.grid-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
 }
+
+.grid-habilidades span {
+  background-color: #007acc;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 122, 204, 0.4);
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  user-select: none;
+}
+
+.grid-habilidades span:hover {
+  background-color: #005f99;
+  box-shadow: 0 4px 10px rgba(0, 95, 153, 0.7);
+}
+
 
 
 
