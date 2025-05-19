@@ -13,7 +13,7 @@
     <meta property="og:title" content="Portfólio | André Waldige" />
     <meta property="og:description" content="Desenvolvedor Front-end em transição de carreira." />
     <meta property="og:image" content="avatar.jpeg" />
-    <meta property="og:url" content="https://seu-site.vercel.app" />
+    <meta property="og:url" content="awaldige-github-io.vercel.app" />
     <meta name="twitter:card" content="summary_large_image" />
     
     <link rel="stylesheet" href="style.css" />
@@ -77,7 +77,7 @@
     <!-- Início -->
     <section id="home" class="section">
       <div class="container" data-aos="fade-up">
-        <img src="avatar.jpeg" alt="Foto de perfil de André Waldige" class="avatar" />
+        <img src="avatar.jpeg" alt="Imagem de perfil de André Waldige" class="avatar" />
         <h2>Olá, sou o André Waldige</h2>
         <p>
           Desenvolvedor Front-end em transição de carreira, apaixonado por tecnologia, interfaces modernas e soluções que proporcionam uma excelente experiência ao usuário.
@@ -208,17 +208,22 @@
     <section id="contato" class="section">
       <div class="container" data-aos="fade-up">
         <h2>Contato</h2>
-        <form action="https://formsubmit.co/awaldige@gmail.com" method="POST"/>
-  <input type="text" name="name" placeholder="seu nome" required />
-  <input type="email" name="email" placeholder="seu e-mail" required />
+        <form action="https://formsubmit.co/awaldige@gmail.com" method="POST">
+  <label for="name" class="sr-only">Nome</label>
+  <input type="text" name="name" placeholder="Seu nome" required />
+  
+  <input type="email" name="email" placeholder="Seu e-mail" required />
+  
   <textarea name="message" placeholder="Sua mensagem" required></textarea>
 
   <!-- Configurações do FormSubmit -->
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="obrigado.html">
+ <input type="hidden" name="_next" id="redirectInput">
 
   <button type="submit">Enviar</button>
 </form>
+
+
         <div class="links">
           <a href="https://github.com/awaldige" target="_blank" rel="noopener noreferrer">GitHub</a> |
           <a href="https://www.linkedin.com/in/andr%C3%A9-waldige-41489986/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -233,8 +238,24 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const redirectInput = document.getElementById("redirectInput");
+    const host = window.location.hostname;
+
+    if (host.includes("vercel.app")) {
+      redirectInput.value = "https://awaldige-github-io.vercel.app/obrigado.html";
+    } else if (host.includes("github.io")) {
+      redirectInput.value = "https://awaldige.github.io/obrigado.html";
+    } else {
+      redirectInput.value = "/obrigado.html"; // fallback local
+    }
+  });
+</script>
+
   </body>
 </html>
+</script>
 
 
 
