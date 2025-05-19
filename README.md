@@ -8,7 +8,7 @@ Este é o meu portfólio pessoal como desenvolvedor front-end em transição de 
 
 ## 🔗 Acesse o portfólio online
 
-[https://seu-site.vercel.app](https://seu-site.vercel.app)
+ https://awaldige.github.io/Portfolio/
 
 ## ✨ Funcionalidades
 
