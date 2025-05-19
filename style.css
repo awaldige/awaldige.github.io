@@ -362,11 +362,21 @@ body.dark-mode #toggleDarkMode .icon.moon {
   header nav h1 {
     font-size: 1.4rem;
   }
-}.grid-habilidades {
+}
+.grid-habilidades {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
   padding: 1rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+/* No desktop, limita a 4 colunas fixas e deixa os cards maiores */
+@media (min-width: 768px) {
+  .grid-habilidades {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 700px;
+    margin: 0 auto; /* centraliza a grid no container */
+  }
 }
 
 .grid-habilidades span {
