@@ -312,5 +312,57 @@ body.dark-mode #toggleDarkMode .icon.sun {
 body.dark-mode #toggleDarkMode .icon.moon {
   color: #ffd700;
 }
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  header nav ul li a {
+    font-size: 1.1rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  input, textarea, button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .avatar {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  header nav h1 {
+    font-size: 1.4rem;
+  }
+}
+
 
 
