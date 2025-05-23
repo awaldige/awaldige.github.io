@@ -4,43 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio | André Waldige</title>
-    <meta
-      name="description"
-      content="Portfólio de André Waldige, desenvolvedor front-end em transição de carreira."
-    />
-    
+    <meta name="description" content="Portfólio de André Waldige, desenvolvedor front-end em transição de carreira." />
+
     <!-- Open Graph -->
     <meta property="og:title" content="Portfólio | André Waldige" />
     <meta property="og:description" content="Desenvolvedor Front-end em transição de carreira." />
     <meta property="og:image" content="avatar.jpeg" />
-    <meta property="og:url" content="awaldige-github-io.vercel.app" />
+    <meta property="og:url" content="https://awaldige-github-io.vercel.app" />
     <meta name="twitter:card" content="summary_large_image" />
-    
+
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <style>
       html {
         scroll-behavior: smooth;
       }
-      /* Visually hidden class para labels acessíveis */
       .sr-only {
         position: absolute;
         width: 1px;
@@ -48,84 +31,127 @@
         padding: 0;
         margin: -1px;
         overflow: hidden;
-        clip: rect(0,0,0,0);
+        clip: rect(0, 0, 0, 0);
         border: 0;
+      }
+      .avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      .grid-habilidades img {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+        margin: 10px;
       }
     </style>
   </head>
-
   <body>
     <!-- Cabeçalho -->
     <header>
-      <nav class="container">
-        <h1>André Waldige</h1>
-        <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#formacao">Formação</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-         <button id="toggleDarkMode" aria-label="Alternar modo escuro">
+  <nav class="container">
+    <h1>André Waldige</h1>
+
+    <!-- Botão hamburger para mobile -->
+    <button class="hamburger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <button id="toggleDarkMode" aria-label="Alternar modo escuro">
       <span class="icon sun">☀️</span>
       <span class="icon moon">🌙</span>
-         </button>
-      </nav>
-    </header>
+    </button>
+  </nav>
+</header>
 
-    <!-- Início -->
-    <section id="home" class="section">
-      <div class="container" data-aos="fade-up">
-        <img src="avatar.jpeg" alt="Imagem de perfil de André Waldige" class="avatar" />
-        <h2>Olá, sou o André Waldige</h2>
-        <p>
-          Desenvolvedor Front-end em transição de carreira, apaixonado por tecnologia, interfaces modernas e soluções que proporcionam uma excelente experiência ao usuário.
-        </p>        
+    <!-- Início -->   
+<section id="home" class="section">
+  <div class="container" data-aos="fade-up">
+    <img src="avatar.jpeg" alt="Imagem de perfil de André Waldige" class="avatar" />
+    <h2>Olá, sou o André Waldige</h2>
+    <p>Desenvolvedor Front-end em transição de carreira, apaixonado por tecnologia, interfaces modernas e soluções que proporcionam uma excelente experiência ao usuário.</p>
+    <p>Estou constantemente em busca de novos aprendizados e desafios que me impulsionem a evoluir na área.</p>
+    <p>Atualmente, estou disponível para oportunidades de trabalho e projetos freelance. Vamos nos conectar?</p>
+  </div>
+</section>
+
+<!-- Sobre -->
+<section id="sobre" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2>Sobre Mim</h2>
+    <p>Sou um desenvolvedor em formação com experiência em HTML, CSS, JavaScript, Git, GitHub, consumo de APIs e SQL. Atualmente, estou focado em aprender e aplicar React em projetos práticos.</p> 
+    <p>Tenho como objetivo aplicar meus conhecimentos técnicos em soluções inovadoras e de impacto, enquanto continuo evoluindo profissionalmente.</p>
+    <p>Se você procura um desenvolvedor dedicado, proativo e apaixonado por tecnologia, entre em contato. Estou aberto a novas oportunidades e colaborações!</p>
+  </div>
+</section>
+
+      
+<!-- Habilidades -->
+      <section id="habilidades" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2>Habilidades</h2>
+    <p>Minhas principais habilidades incluem:</p>
+
+    <div class="grid-habilidades">
+      <div class="card-habilidade" data-tooltip="Linguagem usada para estruturar páginas web.">
+        <img src="html5.png" alt="HTML5" />
+        <span>HTML5</span>
       </div>
-    </section>
 
-    <!-- Sobre -->
-    <section id="sobre" class="section">
-      <div class="container" data-aos="fade-right">
-        <h2>Sobre Mim</h2>
-        <p>
-         Desenvolvedor em formação com experiência em HTML, CSS, JavaScript, Git, APIs e SQL.  
-         Atualmente focado em aprender e aplicar React em projetos práticos.
-        </p>         
-        <p>
-          Busco aplicar meus conhecimentos técnicos em soluções inovadoras, enquanto continuo
-          evoluindo na área.
-        </p>       
-        <p>
-          Estou sempre em busca de novos desafios e oportunidades para
-          aprimorar minhas habilidades e contribuir para projetos impactantes.
-        </p>
-        <p>
-          Se você está procurando um desenvolvedor dedicado e apaixonado por
-          tecnologia, entre em contato!
-        </p>
+      <div class="card-habilidade" data-tooltip="Responsável pelo estilo visual dos sites.">
+        <img src="css3.png" alt="CSS3" />
+        <span>CSS3</span>
       </div>
-    </section>
 
-    <!-- Habilidades -->
-    <section id="habilidades" class="section">
-      <div class="container" data-aos="fade-left">
-        <h2>Habilidades</h2>
-        <div class="grid-habilidades">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>Git & GitHub</span>
-          <span>APIs REST</span>
-          <span>SQL</span>
-          <span>Python</span>
-          <span>React (em aprendizado)</span>
-        </div>
+      <div class="card-habilidade" data-tooltip="Linguagem que adiciona interatividade aos sites.">
+        <img src="javascript.png" alt="JavaScript" />
+        <span>JavaScript</span>
       </div>
-    </section>
 
-    <!-- Formação -->
+      <div class="card-habilidade" data-tooltip="Plataforma para hospedar e versionar códigos.">
+        <img src="github.png" alt="GitHub" />
+        <span>GitHub</span>
+      </div>
+
+      <div class="card-habilidade" data-tooltip="Linguagem usada para gerenciar bancos de dados.">
+        <img src="sql.png" alt="SQL" />
+        <span>SQL</span>
+      </div>
+
+      <div class="card-habilidade" data-tooltip="Linguagem versátil para automações, dados e web.">
+        <img src="python.png" alt="Python" />
+        <span>Python</span>
+      </div>
+
+      <div class="card-habilidade" data-tooltip="Conecta sistemas diferentes para troca de dados.">
+        <img src="api.png" alt="API" />
+        <span>APIs</span>
+      </div>
+
+      <div class="card-habilidade" data-tooltip="Biblioteca JavaScript para criar interfaces web.">
+        <img src="react.png" alt="React" />
+        <span>React</span>
+      </div>
+    </div>
+  </div>
+</section>    
+     
+     <!-- Formação -->
     <section id="formacao" class="section">
       <div class="container" data-aos="fade-up">
         <h2>Formação Acadêmica</h2>
@@ -140,7 +166,7 @@
           </li>
           <li>
             <strong>Pós-graduação em Transformação Digital e Inovação</strong>
-            <span>Faculdade Anhanguera - Concluído</span>
+            <span>Faculdade Anhanguera - Concluído (2024)</span>
           </li>
         </ul>
       </div>
@@ -256,6 +282,16 @@
   </body>
 </html>
 </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  </body>
+</html>
+
 
 
 
