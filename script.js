@@ -7,7 +7,7 @@ function toggleTheme() {
   const currentTheme = html.getAttribute('data-theme');
 
   if (currentTheme === 'dark') {
-    html.removeAttribute('data-theme');
+    html.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
   } else {
     html.setAttribute('data-theme', 'dark');
@@ -17,17 +17,17 @@ function toggleTheme() {
 
 // Aplica o tema salvo no carregamento da página
 function applySavedTheme() {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  }
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
 }
 
-// Adiciona o evento de clique no botão
+// Evento de clique no botão
 toggleBtn.addEventListener('click', toggleTheme);
 
 // Aplica tema ao carregar a página
 window.addEventListener('DOMContentLoaded', applySavedTheme);
+
+// Menu hambúrguer
 const hamburger = document.querySelector('button.hamburger');
 const navLinks = document.querySelector('ul.nav-links');
 
