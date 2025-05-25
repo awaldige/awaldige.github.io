@@ -137,15 +137,29 @@ button.hamburger span {
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('imagem de fundo.jpg'); /* Ajuste o caminho se necessário */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: Arial, sans-serif;
+  color: white;
+  position: relative;
+  z-index: 0;
 }
 
-
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Escurece para melhorar contraste do texto */
+  z-index: -1;
+}
 
 nav.container {
   display: flex;
@@ -548,4 +562,3 @@ textarea:focus {
 .card-habilidade:hover::after {
   opacity: 1;
 }
-
