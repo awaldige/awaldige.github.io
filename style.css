@@ -137,12 +137,14 @@ button.hamburger span {
 }
 
 body {
-  background: linear-gradient(to bottom right, #e6f2ff, #cce6ff);
-  color: #111;
+  background-color: var(--bg);
+  color: var(--text);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 
 nav.container {
@@ -546,5 +548,4 @@ textarea:focus {
 .card-habilidade:hover::after {
   opacity: 1;
 }
-
 
