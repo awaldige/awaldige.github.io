@@ -583,5 +583,149 @@ textarea:focus {
   .card-projetos {
     grid-template-columns: 1fr;
   }
+}/* ===== Melhorias de Responsividade Mobile ===== */
+
+/* Ajustes gerais para telas até 600px */
+@media (max-width: 600px) {
+  /* Container com padding reduzido para aproveitar melhor o espaço */
+  .container {
+    width: 95vw;
+    padding: 1rem;
+  }
+
+  /* Header e nav */
+  nav.container {
+    flex-wrap: wrap;
+    padding: 0 0.5rem;
+  }
+
+  nav h1 {
+    font-size: 1.25rem;
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Menu principal escondido, menu hamburger visível */
+  nav ul.nav-links {
+    display: flex !important; /* forçar exibição no mobile */
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 70vw;
+    max-width: 280px;
+    height: calc(100vh - 60px);
+    background-color: var(--primary);
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 110;
+  }
+
+  nav ul.nav-links.open {
+    right: 0;
+  }
+
+  nav ul.nav-links li {
+    width: 100%;
+  }
+
+  nav ul.nav-links li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+  }
+
+  /* Botão hamburger */
+  button.hamburger {
+    display: flex;
+    z-index: 120;
+  }
+
+  /* Avatar menor */
+  .avatar {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+
+  /* Títulos menores */
+  h2 {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+
+  /* Parágrafos com padding lateral */
+  .section p {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+  /* Grid de habilidades flexível para 1 coluna */
+  .grid-habilidades {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  /* Cards de projetos ocupam toda a largura com padding */
+  .card-projetos {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  /* Formulário ocupa toda largura com padding lateral */
+  form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Inputs e textarea responsivos */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+
+  /* Botão de submit maior */
+  button[type="submit"] {
+    font-size: 1.1rem;
+    padding: 0.85rem 1.5rem;
+  }
+
+  /* Links de contato centralizados com padding */
+  .links {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+  /* Timeline com margem reduzida */
+  .timeline {
+    max-width: 100%;
+    padding-left: 0.5rem;
+  }
 }
+
+/* Pequenos ajustes para telas entre 601px e 768px */
+@media (min-width: 601px) and (max-width: 768px) {
+  nav ul.nav-links {
+    width: 250px;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
 
