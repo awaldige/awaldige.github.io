@@ -562,3 +562,26 @@ textarea:focus {
 .card-habilidade:hover::after {
   opacity: 1;
 }
+/* Habilidades - responsivo para 2 colunas até 600px */
+@media (max-width: 600px) {
+  .grid-habilidades {
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha em mobile */
+  }
+}
+
+/* Projetos - garantir 2 colunas até 600px */
+@media (max-width: 600px) {
+  .card-projetos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Opcional: Para telas bem pequenas (ex: < 400px), voltar para 1 coluna */
+@media (max-width: 400px) {
+  .grid-habilidades,
+  .card-projetos {
+    grid-template-columns: 1fr;
+  }
+}
+
