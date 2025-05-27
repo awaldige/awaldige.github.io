@@ -730,35 +730,6 @@ textarea:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/* Impede que o conteúdo ultrapasse a largura e altura da tela */
-html, body {
-  overflow-x: hidden;
-  max-width: 100vw;
-  max-height: 100vh;
-}
-
-/* Evita que o conteúdo da pseudo-elemento ::before vaze */
-html::before {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  overflow: hidden;
-}
-
-/* Garante que o container não force largura maior que a tela */
-.container {
-  width: 100%;
-  max-width: var(--container-max);
-  box-sizing: border-box;
-}
-
-/* Corrige possíveis problemas no menu mobile */
-@media (max-width: 768px) {
-  ul.nav-links {
-    overflow-y: auto;
-    max-height: calc(100vh - 60px);
-  }
-}
 
 
 
