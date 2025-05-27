@@ -721,5 +721,15 @@ textarea:focus {
     font-size: 1.6rem;
   }
 }
+@media (max-width: 768px) {
+  .grid-habilidades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-projetos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 
