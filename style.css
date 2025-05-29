@@ -579,6 +579,86 @@ button[type="submit"]::before {
 button[type="submit"]:hover::before {
     transform: scale(1.2);
 }
+@media (max-width: 768px) {
+  /* Reduz largura do container */
+  .container {
+    width: 95vw;
+    padding: 1rem;
+  }
+
+  /* Cabeçalho responsivo */
+  nav.container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Exibe botão hamburger */
+  button.hamburger {
+    display: flex;
+  }
+
+  /* Esconde o menu padrão */
+  nav ul.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  /* Menu aberto (adicione classe "active" via JS) */
+  nav ul.nav-links.active {
+    display: flex;
+  }
+
+  /* Ajustes para seção de habilidades */
+  .grid-habilidades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Avatar menor */
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Títulos menores */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Timeline com menos margem */
+  .timeline {
+    padding-left: 0.5rem;
+  }
+
+  /* Cards de projeto com menos espaçamento */
+  .card-projetos {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-habilidades {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline li {
+    font-size: 0.9rem;
+  }
+
+  .projeto {
+    padding: 1rem;
+  }
+
+  input, textarea, button[type="submit"] {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
 
 
 
