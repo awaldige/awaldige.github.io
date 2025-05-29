@@ -2,223 +2,211 @@
 <html lang="pt-br" data-theme="light">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | André Waldige</title>
-  <meta name="description" content="Portfólio de André Waldige, desenvolvedor front-end em transição de carreira." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | André Waldige</title>
+    <meta name="description" content="Portfólio de André Waldige, desenvolvedor front-end em transição de carreira." />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Portfólio | André Waldige" />
-  <meta property="og:description" content="Desenvolvedor Front-end em transição de carreira." />
-  <meta property="og:image" content="avatar.jpeg" />
-  <meta property="og:url" content="https://awaldige-github-io.vercel.app" />
-  <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Portfólio | André Waldige" />
+    <meta property="og:description" content="Desenvolvedor Front-end em transição de carreira." />
+    <meta property="og:image" content="avatar.jpeg" />
+    <meta property="og:url" content="https://awaldige-github-io.vercel.app" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvclcSsR-cQxxfpGI.woff2" as="font" type="font/woff2" crossorigin />
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
-    }
-    .avatar {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 20px;
-    }
-    .grid-habilidades img {
-      width: 64px;
-      height: 64px;
-      object-fit: contain;
-      margin: 10px;
-    }
-  </style>
+    <link rel="stylesheet" href="style.css" />
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-  <div class="overlay"></div>
+    <div class="overlay"></div>
 
-  <!-- Cabeçalho -->
-  <header>
-    <nav class="container">
-      <h1>André Waldige</h1>
+    <header>
+        <nav class="container">
+            <h1>André Waldige</h1>
 
-      <button class="hamburger" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
-      </button>
+            <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
 
-      <ul class="nav-links">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+            <ul class="nav-links" id="main-nav">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#conquistas">Conquistas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
 
-      <button id="toggleDarkMode" aria-label="Alternar modo escuro">
-        <span class="icon sun">☀️</span>
-        <span class="icon moon">🌙</span>
-      </button>
-    </nav>
-  </header>
+            <button id="toggleDarkMode" aria-label="Alternar modo escuro">
+                <span class="icon sun">☀️</span>
+                <span class="icon moon">🌙</span>
+            </button>
+        </nav>
+    </header>
 
-  <!-- Início -->
-  <section id="inicio" class="section">
-    <div class="container texto-padrao" data-aos="fade-up">
-      <img src="avatar.jpeg" alt="Imagem de perfil de André Waldige" class="avatar" />
-      <h2>Olá, sou o André Waldige</h2>
-      <p>Desenvolvedor Front-end em transição de carreira, apaixonado por tecnologia, interfaces modernas e soluções que proporcionam uma excelente experiência ao usuário.</p>
-      <p>Estou constantemente em busca de novos aprendizados e desafios que me impulsionem a evoluir na área.</p>
-      <p>Atualmente, estou disponível para oportunidades de trabalho e projetos freelance. Vamos nos conectar?</p>
-    </div>
-  </section>
+    <section id="inicio" class="section">
+        <div class="container texto-padrao" data-aos="fade-up">
+            <img src="avatar.jpeg" alt="Imagem de perfil de André Waldige" class="avatar" />
+            <h2>Olá, sou o André Waldige</h2>
+            <p>Desenvolvedor Front-end em transição de carreira, apaixonado por tecnologia, interfaces modernas e soluções que proporcionam uma excelente experiência ao usuário.</p>
+            <p>Estou constantemente em busca de novos aprendizados e desafios que me impulsionem a evoluir na área.</p>
+            <p>Atualmente, estou disponível para oportunidades de trabalho e projetos freelance. Vamos nos conectar?</p>
+        </div>
+    </section>
 
-  <!-- Sobre -->
-  <section id="sobre" class="section">
-    <div class="container texto-padrao" data-aos="fade-up">
-      <h2>Sobre Mim</h2>
-      <p>Sou um desenvolvedor em formação com experiência em HTML, CSS, JavaScript, Git, GitHub, consumo de APIs e SQL. Atualmente, estou focado em aprender e aplicar React em projetos práticos.</p>
-      <p>Tenho como objetivo aplicar meus conhecimentos técnicos em soluções inovadoras e de impacto, enquanto continuo evoluindo profissionalmente.</p>
-      <p>Se você procura um desenvolvedor dedicado, proativo e apaixonado por tecnologia, entre em contato. Estou aberto a novas oportunidades e colaborações!</p>
-    </div>
-  </section>
+    <section id="sobre" class="section">
+        <div class="container texto-padrao" data-aos="fade-up">
+            <h2>Sobre Mim</h2>
+            <p>Sou um desenvolvedor em formação com experiência em HTML, CSS, JavaScript, Git, GitHub, consumo de APIs e SQL. Atualmente, estou focado em aprender e aplicar React em projetos práticos.</p>
+            <p>Tenho como objetivo aplicar meus conhecimentos técnicos em soluções inovadoras e de impacto, enquanto continuo evoluindo profissionalmente.</p>
+            <p>Se você procura um desenvolvedor dedicado, proativo e apaixonado por tecnologia, entre em contato. Estou aberto a novas oportunidades e colaborações!</p>
+        </div>
+    </section>
 
-  <!-- Habilidades -->
-  <section id="habilidades" class="section">
-    <div class="container" data-aos="fade-up">
-      <h2>Habilidades</h2>
-      <p>Minhas principais habilidades incluem:</p>
+    <section id="habilidades" class="section">
+        <div class="container" data-aos="fade-up">
+            <h2>Habilidades</h2>
+            <p>Minhas principais habilidades incluem:</p>
 
-      <div class="grid-habilidades">
-        <div class="card-habilidade" data-tooltip="Linguagem usada para estruturar páginas web.">
-          <img src="html5.png" alt="HTML5" />
-          <span>HTML5</span>
+            <div class="grid-habilidades">
+                <div class="card-habilidade" data-tooltip="Linguagem usada para estruturar páginas web.">
+                    <img src="html5.png" alt="Ícone da linguagem HTML5" />
+                    <span>HTML5</span>
+                </div>
+                <div class="card-habilidade" data-tooltip="Responsável pelo estilo visual dos sites.">
+                    <img src="css3.png" alt="Ícone da linguagem CSS3" />
+                    <span>CSS3</span>
+                </div>
+                <div class="card-habilidade" data-tooltip="Linguagem que adiciona interatividade aos sites.">
+                    <img src="javascript.png" alt="Ícone da linguagem JavaScript" />
+                    <span>JavaScript</span>
+                </div>
+                <div class="card-habilidade" data-tooltip="Plataforma para hospedar e versionar códigos.">
+                    <img src="github.png" alt="Ícone do GitHub" />
+                    <span>GitHub</span>
+                </div>
+                <div class="card-habilidade" data-tooltip="Linguagem usada para gerenciar bancos de dados.">
+                    <img src="sql.png" alt="Ícone da linguagem SQL" />
+                    <span>SQL</span>
+                </div>
+                <div class="card-habilidade" data-tooltip="Linguagem versátil para automações, dados e web.">
+                    <img src="python.png" alt="Ícone da linguagem Python" />
+                    <span>Python</span>
+                </div>
+                <div class="card-habilidade" data-tooltip="Conecta sistemas diferentes para troca de dados.">
+                    <img src="api.png" alt="Ícone representando API" />
+                    <span>API</span>
+                </div>
+                <div class="card-habilidade" data-tooltip="Biblioteca JavaScript para criar interfaces web.">
+                    <img src="react.png" alt="Ícone da biblioteca React" />
+                    <span>React</span>
+                </div>
+            </div>
         </div>
-        <div class="card-habilidade" data-tooltip="Responsável pelo estilo visual dos sites.">
-          <img src="css3.png" alt="CSS3" />
-          <span>CSS3</span>
-        </div>
-        <div class="card-habilidade" data-tooltip="Linguagem que adiciona interatividade aos sites.">
-          <img src="javascript.png" alt="JavaScript" />
-          <span>JavaScript</span>
-        </div>
-        <div class="card-habilidade" data-tooltip="Plataforma para hospedar e versionar códigos.">
-          <img src="github.png" alt="GitHub" />
-          <span>GitHub</span>
-        </div>
-        <div class="card-habilidade" data-tooltip="Linguagem usada para gerenciar bancos de dados.">
-          <img src="sql.png" alt="SQL" />
-          <span>SQL</span>
-        </div>
-        <div class="card-habilidade" data-tooltip="Linguagem versátil para automações, dados e web.">
-          <img src="python.png" alt="Python" />
-          <span>Python</span>
-        </div>
-        <div class="card-habilidade" data-tooltip="Conecta sistemas diferentes para troca de dados.">
-          <img src="api.png" alt="API" />
-          <span>API</span>
-        </div>
-        <div class="card-habilidade" data-tooltip="Biblioteca JavaScript para criar interfaces web.">
-          <img src="react.png" alt="React" />
-          <span>React</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Formação -->
-  <section id="formacao" class="section">
-    <div class="container" data-aos="fade-up">
-      <h2>Formação Acadêmica</h2>
-      <ul class="timeline">
-        <li>
-          <strong>Análise e Desenvolvimento de Sistemas</strong>
-          <span>Faculdade Anhanguera - Concluído (2023)</span>
-        </li>
-        <li>
-          <strong>Pós-graduação em Inteligência Artificial e Machine Learning</strong>
-          <span>Faculdade Anhanguera - Concluído (2024)</span>
-        </li>
-        <li>
-          <strong>Pós-graduação em Transformação Digital e Inovação</strong>
-          <span>Faculdade Anhanguera - Concluído (2024)</span>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <section id="formacao" class="section">
+        <div class="container" data-aos="fade-up">
+            <h2>Formação Acadêmica</h2>
+            <ul class="timeline">
+                <li>
+                    <strong>Análise e Desenvolvimento de Sistemas</strong>
+                    <span>Faculdade Anhanguera - Concluído (2023)</span>
+                </li>
+                <li>
+                    <strong>Pós-graduação em Inteligência Artificial e Machine Learning</strong>
+                    <span>Faculdade Anhanguera - Concluído (2024)</span>
+                </li>
+                <li>
+                    <strong>Pós-graduação em Transformação Digital e Inovação</strong>
+                    <span>Faculdade Anhanguera - Concluído (2024)</span>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-  <!-- Projetos -->
-  <section id="projetos" class="section">
-    <div class="container" data-aos="fade-up">
-      <h2>Projetos em Destaque</h2>
+    <section id="projetos" class="section">
+        <div class="container" data-aos="fade-up">
+            <h2>Projetos em Destaque</h2>
 
-      <div class="card-projetos">
-        <div class="projeto">
-          <h3>Cardápio de Pizzaria</h3>
-          <p>Menu interativo com categorias e tema escuro/claro.</p>
-          <p><strong>Tecnologias:</strong> HTML, CSS, JS</p>
-          <a href="https://github.com/awaldige/cardapio-pizzaria" target="_blank">Ver projeto</a>
+            <div class="card-projetos">
+                <div class="projeto">
+                    <h3>Cardápio de Pizzaria</h3>
+                    <p>Menu interativo com categorias e tema escuro/claro.</p>
+                    <p><strong>Tecnologias:</strong> HTML, CSS, JS</p>
+                    <a href="https://cardapio-pizzaria-liart.vercel.app" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Pesquisa de Livros</h3>
+                    <p>Busca livros com Google Books API.</p>
+                    <p><strong>Tecnologias:</strong> HTML, CSS, JS, API</p>
+                    <a href="https://pesquisa-de-livros.vercel.app" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Pesquisa de Filmes e Séries</h3>
+                    <p>Busca com TMDb API.</p>
+                    <p><strong>Tecnologias:</strong> HTML, JS, CSS, API</p>
+                    <a href="https://pesquisa-de-filmes-e-serie.vercel.app" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Portal de Esportes</h3>
+                    <p>Portal informativo com notícias e destaques de várias modalidades esportivas.</p>
+                    <p><strong>Tecnologias:</strong> HTML, JS, CSS</p>
+                    <a href="https://portal-de-esportes.vercel.app" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Loterias Caixas</h3>
+                    <p>Consulta de resultados das loterias.</p>
+                    <p><strong>Tecnologias:</strong> HTML, JS, CSS, API</p>
+                    <a href="https://resultado-loterias-caixas.vercel.app" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Vendas de Carros</h3>
+                    <p>Sistema de banco de dados para controle de vendas de automóveis.</p>
+                    <p><strong>Tecnologias:</strong> SQL</p>
+                    <a href="https://github.com/awaldige/bd-Vendas-Carro" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Odonto-Pro</h3>
+                    <p>Site de vendas de produtos odontologicos</p>
+                    <p><strong>Tecnologias:</strong> HTML, CSS, JS</p>
+                    <a href="https://odonto-pro-lyart.vercel.app" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                </div>
+            </div>
         </div>
-        <div class="projeto">
-          <h3>Pesquisa de Livros</h3>
-          <p>Busca livros com Google Books API.</p>
-          <p><strong>Tecnologias:</strong> HTML, CSS, JS, API</p>
-          <a href="https://github.com/awaldige/Pesquisa-de-Livros" target="_blank">Ver projeto</a>
-        </div>
-        <div class="projeto">
-          <h3>Pesquisa de Filmes e Séries</h3>
-          <p>Busca com TMDb API.</p>
-          <p><strong>Tecnologias:</strong> HTML, JS, CSS, API</p>
-          <a href="https://github.com/awaldige/Pesquisa-de-filmes-e-serie" target="_blank">Ver projeto</a>
-        </div>
-        <div class="projeto">
-          <h3>Portal de Esportes</h3>
-          <p>Portal informativo com notícias e destaques de várias modalidades esportivas.</p>
-          <p><strong>Tecnologias:</strong> HTML, JS, CSS</p>
-          <a href="https://github.com/awaldige/Portal-de-Esportes" target="_blank">Ver projeto</a>
-        </div>
-        <div class="projeto">
-          <h3>Loterias Caixas</h3>
-          <p>Consulta de resultados das loterias.</p>
-          <p><strong>Tecnologias:</strong> HTML, JS, CSS, API</p>
-          <a href="https://github.com/awaldige/Loterias-Caixas" target="_blank">Ver projeto</a>
-        </div>
-        <div class="projeto">
-          <h3>Vendas de Carros</h3>
-          <p>Sistema de banco de dados para controle de vendas de automóveis.</p>
-          <p><strong>Tecnologias:</strong> SQL</p>
-          <a href="https://github.com/awaldige/bd-Vendas-Carro" target="_blank">Ver projeto</a>
-        </div>
-        <div class="projeto">
-          <h3>Livraria</h3>
-          <p>Sistema de banco de dados para controle de uma biblioteca.</p>
-          <p><strong>Tecnologias:</strong> SQL</p>
-          <a href="https://github.com/awaldige/Livraria" target="_blank">Ver projeto</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contato -->
-  <section id="contato" class="section">
+    <section id="conquistas" class="section">
+        <div class="container" data-aos="fade-up">
+            <h2>Conquistas e Certificados</h2>
+            <ul>
+                <li>Fundação Bradesco - Curso Introdução a TI (2023)</li>
+                <li>Fundação Bradesco - Curso Git e GitHub (2023)</li>
+                <li>Fundação Bradesco - Curso SQL Básico (2023)</li>
+                <li>Fundação Bradesco - Curso Lógica de Programação (2023)</li>
+                <li>DIO - Curso Introdução a Inteligência Artificial Aplicada a Dados (2024)</li>
+                <li>DIO - Curso Desafios de Projetos: Crie um Portfólio Vencedor (2024)</li>
+                <li>DIO - Curso Introdução ao Git e ao GitHub (2024)</li>
+                <li>DIO - Arquitetura de Banco de Dados (2025)</li>
+                <li>DIO - Fundamentos de Modelagem e Projeto de Bancos de Dados (2025)</li>
+                <li>DIO - Modelo de Entidade Relacionamento com Banco de Dados (2025)</li>
+                <li>DIO - Modelo Relacionamento de Entidade Aprimorado com Banco de Dados (2025)</li>
+                <li>Pós-graduação em Inteligência Artificial e Machine Learning (2024)</li>
+                <li>Pós-graduação em Tecnologia, Inovação e Transformação Digital (2024)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
     <div class="container" data-aos="fade-up">
       <h2>Contato</h2>
       <form action="https://formsubmit.co/awaldige@gmail.com" method="POST">
@@ -240,13 +228,22 @@
     </div>
   </section>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="script.js"></script>
- 
 
+    <footer>
+        <div class="container texto-padrao">
+            <p>© 2025 André Waldige. Todos os direitos reservados.</p>
+            <p>
+                <a href="https://github.com/awaldige" target="_blank" rel="noopener noreferrer">GitHub</a> |
+                <a href="https://www.linkedin.com/in/andrewaldige/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
